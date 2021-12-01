@@ -22,14 +22,14 @@
       h3 {
         text-align: center;
         margin-top: 50px;
-        color: #071e3d;
+        color: #ffffff;
       }
     </style>
 
     <h3>Siswa yang sudah mendaftar</h3>
   </header>
   <nav class="text-center" style="margin-top: 20px;">
-    <a href="form-daftar.php" class="btn btn-dark">Tambah Baru</a>
+    <a href="form-daftar.php" class="btn btn-info">Tambah Baru</a>
   </nav>
   <br>
   <div class="container border bg-light rounded-lg">
@@ -40,6 +40,7 @@
           <th>No</th>
           <th>Nama</th>
           <th>Alamat</th>
+          <th>Jenis Kelamin</th>
           <th>Agama</th>
           <th>Asal Sekolah</th>
           <th>Tindakan</th>
@@ -60,8 +61,8 @@
             echo "<td>".$siswa['sekolah_asal']."</td>";
 
             echo "<td>";
-            echo "<a href='form-edit.php?id=".$siswa['id']."'>Edit</a> | ";
-            echo "<a href='hapus.php?id=".$siswa['id']."'>Hapus</a>";
+            echo "<a href='form-edit.php?id=".$siswa['id']."' class='btn btn-success'>Edit</a> | ";
+            echo "<a href='hapus.php?id=".$siswa['id']."' class='btn btn-warning'>Hapus</a>";
             echo "</td>";
 
             echo "</tr>";
